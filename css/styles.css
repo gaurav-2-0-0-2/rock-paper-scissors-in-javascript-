@@ -1,4 +1,13 @@
 body{
     text-align: center;
     background-color:aquamarine;
+    font-family: 'Righteous', cursive;
+}
+
+.container{
+    margin-top:5%;
+}
+/* hand-icon */
+span.emoji{
+  font-size: 150px;
 }
