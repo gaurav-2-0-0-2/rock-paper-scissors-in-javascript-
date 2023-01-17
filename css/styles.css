@@ -3,17 +3,19 @@ body{
     background-color:aquamarine;
     font-family: 'Righteous', cursive;
     overflow: hidden;
+
 }
 
 h1{
     font-size: 50px;
     color: #11d476;
+    
 }
 
 
 .container{
-    
-    min-width: 510px;
+    margin: 0 auto;
+    max-width: 510px;
 }
 /* hand-icon */
 span.emoji{
@@ -34,3 +36,23 @@ button:hover{
     background-color: #01e962;
     transition:0.2ms ease-out ;
 }
+
+@media screen and (max-width:500px) {
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    span.emoji{
+        font-size:2.5rem;
+    }
+
+   .container{
+    display: inline-block;
+   }
+
+   button{
+    margin-top: 5%;
+   }
+}
+
