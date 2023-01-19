@@ -21,6 +21,9 @@ h1{
 span.emoji{
   font-size: 150px;
 }
+span.computer{
+    font-size: 150px;
+  }
 
 button{
     background-color: #9beb11;
