@@ -6,7 +6,7 @@ let emoji = document.querySelector(".emoji")
 let result = document.querySelector(".result")
 const choice = ["✊", "🫲", "✌️"];
 
-
+// pokemon showdown for reference 
 
 // function to randomly get values for computer
 function gotChoice() {
