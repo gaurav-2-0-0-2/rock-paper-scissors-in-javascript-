@@ -1,0 +1,23 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "***Rock-Paper-Scissors***\r <p>A simple rock paper scissors game.</p>\r Play the game:\r https://gaurav-2-0-0-2.github.io/rock-paper-scissors-in-javascript-/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaurav-2-0-0-2/rock-paper-scissors-in-javascript-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaurav-2-0-0-2/rock-paper-scissors-in-javascript-/issues"
+  },
+  "homepage": "https://github.com/gaurav-2-0-0-2/rock-paper-scissors-in-javascript-#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}

@@ -26,7 +26,7 @@ span.comp{
   }
   #comp{
     margin-right:3.5rem ;
-    margin-left: 3.5rem;
+    /* margin-left: 3.5rem; */
   }
 /* hand-icon */
 span.emoji{
@@ -35,7 +35,7 @@ span.emoji{
   
 }
 #user{
-    margin-left: 4.5rem;
+    margin-left: 7rem;
 }
 
 
