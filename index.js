@@ -11,7 +11,14 @@ let result = document.querySelector(".result")
 // function to randomly get values for computer
 function gotChoice() {
    const choice = ["rock", "paper", "scissor"];
-   let computerChoice = Math.floor(Math.random() * choice.length);
+   // mapping strings with emojis
+   // const choice = {
+   //   "rock":"✊",
+   //   "paper": "🫲",
+   //   "scissor": "✌️"
+   // };
+   let computerChoice = Math.floor(Math.random() *choice.length); 
+   // let computerChoice = ["rock", "paper", "scissor"][Math.floor(Math.random() * 3)];
    return choice[computerChoice];
 }
 
