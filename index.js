@@ -1,48 +1,52 @@
 let rock = document.querySelector(".rock")
 let paper = document.querySelector(".paper")
 let scissor = document.querySelector(".scissor")
-let computer = document.querySelector(".computer")
+let comp = document.querySelector(".comp")
 let emoji = document.querySelector(".emoji")
 let result = document.querySelector(".result")
-const choice = ["✊", "🫲", "✌️"];
+
 
 // pokemon showdown for reference 
 
 // function to randomly get values for computer
 function gotChoice() {
-   
-    let computerChoice = Math.floor(Math.random() * choice.length);
-    return choice[computerChoice];   
-    
+   const choice = ["rock", "paper", "scissor"];
+   let computerChoice = Math.floor(Math.random() * choice.length);
+   return choice[computerChoice];
 }
 
 
-let returnedChoice = gotChoice();
-console.log(returnedChoice);
-
-
-function checkWin(user, computer) {
-  if ( user == computer) {
+function checkWin(user) {
+   const computer = gotChoice();
+   console.log("user choose " + user + " and computer choose " + computer);
+   if (user === computer) {
       result.innerHTML = "It's a tie"
-  } else if (user == "✊"){
-     if (computer == "✌️"){
-        result.innerHTML= "You win! scissor have smashed by the rock"
-     }else{
-        result.innerHTML= "You lose! paper covers the rock"
-     }
-  }else if (user == "🫲"){
-    if (computer == "✊"){
-       result.innerHTML= "You win! paper covers the rock"
-    }else{
-       result.innerHTML= "You lose! scissor cuts the paper"
-    }
- }else if (user == "✌️"){
-    if (computer == "🫲"){
-       result.innerHTML= "You win! scissor cuts the paper"
-    }else{
-       result.innerHTML= "You lose! rock samshes scissor"
-    }
- }
+      comp.innerHTML=computer
+   } else if (user === "rock") {
+      if (computer === "scissor") {
+         result.innerHTML = "You win! scissor have smashed by the rock"
+         comp.innerHTML=computer
+      } else {
+         result.innerHTML = "You lose! paper covers the rock"
+         comp.innerHTML=computer
+      }
+   } else if (user === "paper") {
+      if (computer === "rock") {
+         result.innerHTML = "You win! paper covers the rock"
+         comp.innerHTML=computer
+      } else {
+         result.innerHTML = "You lose! scissor cuts the paper"
+         comp.innerHTML=computer
+      }
+   } else if (user === "scissor") {
+      if (computer === "paper") {
+         result.innerHTML = "You win! scissor cuts the paper"
+         comp.innerHTML=computer
+      } else {
+         result.innerHTML = "You lose! rock samshes scissor"
+         comp.innerHTML=computer
+      }
+   }
 
 }
 
@@ -50,23 +54,31 @@ function checkWin(user, computer) {
 
 
 
+function main() {
+   rock.addEventListener("click", () => {
+      checkWin('rock')
+      emoji.innerHTML="rock"
 
-// basic rock-paper-scissors
+   })
 
-rock.addEventListener("click", ()=>{
-    emoji.innerHTML= choice[0]
-    computer.innerHTML = gotChoice();
-    checkWin(choice[0],returnedChoice)
-})
+   paper.addEventListener("click", () => {
+      checkWin('paper')
+      emoji.innerHTML="paper"
+      
 
-paper.addEventListener("click", ()=>{
-    emoji.innerHTML= choice[1]
-    computer.innerHTML = gotChoice()
-    checkWin(choice[1],returnedChoice)
-})
+   })
 
-scissor.addEventListener("click", ()=>{
-    emoji.innerHTML= choice[2]
-    computer.innerHTML = gotChoice()
-    checkWin(choice[2],returnedChoice)
-})
+   scissor.addEventListener("click", () => {
+      checkWin('scissor')
+      emoji.innerHTML="scissor"
+
+
+   })
+
+}
+
+
+
+
+
+main();
