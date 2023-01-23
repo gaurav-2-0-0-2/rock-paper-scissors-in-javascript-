@@ -16,14 +16,28 @@ h1{
 .container{
     margin: 0 auto;
     max-width: 510px;
-}
-/* hand-icon */
-span.emoji{
-  font-size: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 2rem;
 }
 span.comp{
-    font-size: 150px;
+    font-size: 50px;
+    
   }
+  #comp{
+    margin-right:3.5rem ;
+    margin-left: 3.5rem;
+  }
+/* hand-icon */
+span.emoji{
+  
+  font-size: 50px;
+  
+}
+#user{
+    margin-left: 4.5rem;
+}
+
 
 button{
     background-color: #9beb11;
@@ -31,8 +45,8 @@ button{
     font-size:15px ;
     border: none;
     width: 150px;
-   padding: 1.2% 0 1.2% 0;
-   margin:0 1.2% 0 1.2%;
+   padding: 1% 0 1% 0;
+   margin:0 1% 0 1%;
 }
 
 button:hover{

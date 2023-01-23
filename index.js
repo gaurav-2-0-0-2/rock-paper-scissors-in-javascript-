@@ -47,7 +47,7 @@ function checkWin(user) {
          comp.innerHTML=computer
       }
    }
-
+   
 }
 
 
@@ -58,13 +58,13 @@ function main() {
    rock.addEventListener("click", () => {
       checkWin('rock')
       emoji.innerHTML="rock"
-
+      
    })
 
    paper.addEventListener("click", () => {
       checkWin('paper')
       emoji.innerHTML="paper"
-      
+    
 
    })
 
