@@ -25,7 +25,7 @@ span.comp{
     
   }
   #comp{
-    margin-right:3.5rem ;
+    margin-right:5rem ;
     /* margin-left: 3.5rem; */
   }
 /* hand-icon */
@@ -35,9 +35,16 @@ span.emoji{
   
 }
 #user{
-    margin-left: 7rem;
+    margin-left: 9.5rem;
 }
+#label_comp{
+    margin-left:2.5rem ;
+    /* margin-left: 3.5rem; */
+  }
 
+#label_user{
+    margin-left: 18rem;
+}
 
 button{
     background-color: #9beb11;
