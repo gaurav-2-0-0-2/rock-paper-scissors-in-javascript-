@@ -28,29 +28,36 @@ function checkWin(user) {
    console.log("user choose " + user + " and computer choose " + computer);
    if (user === computer) {
       result.innerHTML = "It's a tie"
+      result.style.color = "white"
       comp.innerHTML=computer
    } else if (user === "rock") {
       if (computer === "scissor") {
          result.innerHTML = "You win! scissor have smashed by the rock"
+         result.style.color = "green"
          comp.innerHTML=computer
       } else {
          result.innerHTML = "You lose! paper covers the rock"
+         result.style.color = "red"
          comp.innerHTML=computer
       }
    } else if (user === "paper") {
       if (computer === "rock") {
          result.innerHTML = "You win! paper covers the rock"
+         result.style.color = "green"
          comp.innerHTML=computer
       } else {
          result.innerHTML = "You lose! scissor cuts the paper"
+         result.style.color = "red"
          comp.innerHTML=computer
       }
    } else if (user === "scissor") {
       if (computer === "paper") {
          result.innerHTML = "You win! scissor cuts the paper"
+         result.style.color = "green"
          comp.innerHTML=computer
       } else {
          result.innerHTML = "You lose! rock samshes scissor"
+         result.style.color = "red"
          comp.innerHTML=computer
       }
    }

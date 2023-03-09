@@ -1,14 +1,15 @@
 body{
     text-align: center;
-    background-color:aquamarine;
+    background-color:rgb(225, 145, 222);
     font-family: 'Righteous', cursive;
     overflow: hidden;
+    min-width: 375px;
 
 }
 
 h1{
     font-size: 50px;
-    color: #11d476;
+    color: #6911d4;
     
 }
 
@@ -17,25 +18,28 @@ h1{
     margin: 0 auto;
     max-width: 510px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
     padding-bottom: 2rem;
 }
 span.comp{
     font-size: 50px;
+   
     
   }
   #comp{
     margin-right:5rem ;
     /* margin-left: 3.5rem; */
+    margin-right: 120px;
   }
 /* hand-icon */
-span.emoji{
-  
+span.emoji{  
+    color: rgb(224, 149, 19);
   font-size: 50px;
+  
   
 }
 #user{
-    margin-left: 9.5rem;
+    margin-left: 0.5rem;
 }
 #label_comp{
     margin-left:2.5rem ;
@@ -43,40 +47,46 @@ span.emoji{
   }
 
 #label_user{
-    margin-left: 18rem;
+    margin-left: 15rem;
 }
 
 button{
-    background-color: #9beb11;
+    background-color: #70eae6;
     font-family: 'Roboto Mono', monospace;
     font-size:15px ;
     border: none;
+    display: block;
     width: 150px;
    padding: 1% 0 1% 0;
    margin:0 1% 0 1%;
 }
+
+.btn-container{ 
+    display: flex;
+    flex-direction:row ;
+    margin-left: 27rem;
+    margin-right: 12rem;
+}
+
 
 button:hover{
     background-color: #01e962;
     transition:0.2ms ease-out ;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:460px) {
 
     h1{
-        font-size: 1.5rem;
+        color: white;
+
     }
 
-    span.emoji{
-        font-size:2.5rem;
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10rem;
+        gap: 15px;
     }
-
-   .container{
-    display: inline-block;
-   }
-
-   button{
-    margin-top: 5%;
-   }
+   
 }
 
